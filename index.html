@@ -13,6 +13,10 @@
     <title>Microsoft Official Homepage</title>
   </head>
   <body>
+    <div class="menu-btn">
+      <i class="fas fa-bars fa-2x"></i>
+    </div>
+
     <div class="container">
       <!-- Nav -->
       <nav class="main-nav">
@@ -150,16 +154,16 @@
           </p>
           <a href="#" class="btn">
             Learn More <i class="fas fa-chevron-right"></i>
-          </a> 
+          </a>
         </div>
       </section>
 
       <!-- Follow -->
       <section class="follow">
         <p>Follow Microsoft</p>
-        <a href="#"><img src="img/social-fb.png" alt="Facebook"></a>
-        <a href="#"><img src="img/social-twitter.png" alt="Twitter"></a>
-        <a href="#"><img src="img/social-linkedin.png" alt="Linkedin"></a>
+        <a href="#"><img src="img/social-fb.png" alt="Facebook" /></a>
+        <a href="#"><img src="img/social-twitter.png" alt="Twitter" /></a>
+        <a href="#"><img src="img/social-linkedin.png" alt="Linkedin" /></a>
       </section>
     </div>
 
@@ -233,5 +237,10 @@
         </ul>
       </div>
     </footer>
+    <script>
+      document.querySelector('.menu-btn').addEventListener('click', () => {
+        document.querySelector('.main-menu').classList.toggle('show');
+      });
+    </script>
   </body>
 </html>
